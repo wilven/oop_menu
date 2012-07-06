@@ -1,0 +1,47 @@
+class Storm:
+    def SetInfo(self,name,speed,date,timeofentry,category,areasaffected,exittime):
+        self.Name=name
+        self.speed=speed
+        self.date=date
+        self.timeofentry=timeofentry
+        self.category=category
+        self.areasaffected=areasaffected
+        self.exittime=exittime
+    def show(self):
+        print("Name:%s" %(self.Name))
+        print("Speed:%s" %(self.speed))
+        print("date: %s" % (self.date))
+        print("time of entry: %s" % (self.timeofentry))
+        print("category: %s" % (self.category))
+        print("areas affected: %s" % (self.areasaffected))
+        print("exit time: %s" % (self.exittime))
+
+class FirstStorm(Storm):
+    def SetInfo(self,name,speed,date,timeofentry,category,areasaffected,exittime):
+        self.Name=name
+        self.speed=speed
+        self.date=date
+        self.timeofentry=timeofentry
+        self.category=category
+        self.areasaffected=areasaffected
+        self.exittime=exittime
+
+ 
+
+      
+        
+
+ListOfStorm=[]
+Storm=FirstStorm()
+Storm.SetInfo("ice storm","4.95mph","January 5-10,1998","9:25am","ice storm","alaska","12:00am")
+ListOfStorm.append(Storm)
+
+
+
+
+
+
+for Storm in ListOfStorm:
+    Storm.show()
+        
+        
