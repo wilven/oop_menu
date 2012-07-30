@@ -1,0 +1,63 @@
+class clock:
+    def time(self):
+        print("clock says 6:00")
+
+class wallclock(clock):
+    pass
+watch=wallclock()
+watch.time()
+
+
+____________________________________________________
+
+class clock:
+    def time(self):
+        print("clock says 6:00")
+def time(self):
+        print("the wallclock says 6:00")
+class wallclock(clock):
+    
+watch=wallclock()
+watch.time
+
+______________________________________________________
+class clock:
+    def time(self):
+        print("clock says 6:00")
+
+class wallclock(clock):
+    def time(self):
+        print("the wallclock says 6:00")
+class wristwatch(clock):
+    def time(self):
+        print("the wristwatch says 6:00")
+class rolex(clock):
+    def time(self):
+        print("the expensive rolex says 6:00")
+watch=rolex()
+watch.time()
+_____________________________________________________-
+class clock:
+    def time(self):
+        print("clock says 6:00")
+
+class wallclock(clock):
+    def time(self):
+        print("the wallclock says 6:00")
+class wristwatch(clock):
+    def time(self):
+        print("the wristwatch says 6:00")
+class rolex(clock):
+    def time(self):
+        print("the expensive rolex says 6:00")
+class fakerolex(clock):
+    def time(self):
+        rolex.time(self)
+watch=fakerolex()
+watch.time()
+
+
+
+
+
+
