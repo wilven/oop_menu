@@ -1,0 +1,39 @@
+class score:
+    def __init__(self):
+        self.score=0
+    def add(self):
+        self.score+=1 
+    def show (self):
+        print("the score is :%i"%(self.score))
+
+basketball=score()
+volleyball=score()
+chess=score()
+
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+basketball.add()
+
+
+
+volleyball.add()
+volleyball.add()
+volleyball.add()
+volleyball.add()
+volleyball.add()
+chess.add()
+chess.add()
+chess.add()
+
+
+
+basketball.show()
+volleyball.show()
+chess.show()
