@@ -1,0 +1,15 @@
+class song:
+    def __init__ (self):
+        self.tilte=""
+        self.genre=""
+        self.artist=""
+
+class pop(song):
+    pass
+
+class ballad(song):
+    pass
+
+class songofri(song):
+    def Listallsong(self):
+        pass
