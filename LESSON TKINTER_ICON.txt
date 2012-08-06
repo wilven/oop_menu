@@ -1,0 +1,7 @@
+import tkinter
+
+
+root=tkinter.Tk()
+tkinter.messagebox.showinfo("title","message",icon=tkinter.messagebox.ERROR)
+root.mainloop()
+root.destroy()
