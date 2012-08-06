@@ -1,0 +1,67 @@
+import tkinter
+class Application(tkinter.Frame):
+    def __init__(self,master):
+        tkinter.Frame.__init__(self,master)
+        self.pack()
+        self.points=0
+        
+        self.Lowbutton=tkinter.Button()
+        self.Lowbutton["text"]= "click here"
+        self.Lowbutton["command"]=self.low
+        self.Lowbutton.pack()
+
+
+        self.HelloButton=tkinter.Button()
+        self.HelloButton["text"]="click me"
+        self.HelloButton["command"]=self.hello
+        self.HelloButton.pack()
+
+        self.HiButton=tkinter.Button()
+        self.HiButton["text"]="click"
+        self.HiButton["command"]=self.hi
+        self.HiButton.pack()
+
+
+        self.pointsbutton=tkinter.Button() 	
+        self.pointsbutton["text"]="points"
+        self.pointsbutton["command"]=self.displaypoints
+        self.pointsbutton.pack()
+
+        self.quitbutton=tkinter.Button()
+        self.quitbutton["text"]= "quit"
+        self.quitbutton["command"]=self.exit
+        self.quitbutton.pack()
+    
+
+       
+
+
+    def low(self):
+        response=tkinter.messagebox.askyesno("hey","Is the sun is Yellow?")
+        if (response==True):
+            self.points+=1
+        
+    def hello(self):
+        response=tkinter.messagebox.askyesno("hoy","Is wood edible?")
+        if (response==True):
+           self.points+=1
+        
+    def hi(self):
+        response=tkinter.messagebox.askyesno("hay","Is fried chicken made of pigs?")
+        if (response==True):
+             self.points+=1
+        
+    def displaypoints(self):
+        tkinter.messagebox.showinfo("Points","Your points are: %i " % (self.points))
+
+    def exit(self):
+        response=tkinter.messagebox.askyesno("bye bye","Do you want to quit?")
+        if (response==True):
+             self.points+=1
+      
+         
+
+root=tkinter.Tk()
+app=Application(master=root)
+app.mainloop()
+root.destroy()
