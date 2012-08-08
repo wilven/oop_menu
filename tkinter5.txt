@@ -1,0 +1,21 @@
+import tkinter
+class Application(tkinter.Frame):
+    def __init__ (self, master):
+        tkinter.Frame.__init__ (self, master)
+        self.config(width=100)
+        self.config(height=200)
+        self.config(bg="#ff00ff")
+        self.pack()
+        self.CreateWidgets()
+    def CreateWidgets(self):
+        self.label1=tkinter.Label(self)
+        self.label1.config(text="helloworld")
+        self.config(bg="pink")
+        self.config(fg="blue")
+        self.label1.pack()
+        
+        
+root=tkinter.Tk()
+app=Application(master=root)
+app.mainloop()
+root.destroy()
